@@ -1,0 +1,363 @@
+html, body{
+    height: 100%; 
+    margin: 0; 
+    padding: 0;}
+
+    body{ 
+        background: linear-gradient(to bottom, #184c99, #b7d5fe);
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+        position: absolute;
+        z-index: 1; 
+        width: 1639px; 
+        overflow-x: hidden; 
+    }
+
+#Barra {position:  absolute;
+            top: 0px;
+            width: 1639px;
+            height: 50px;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 1);
+            text-align: center;
+            z-index: 11;
+            align-items: center;}
+
+    #Barra2{position:  absolute;
+        top: 780px;
+        width: 1639px;
+        height: 88px;
+        padding: 10px 0;
+        background-color: rgba(255, 255, 255, 1);
+        text-align: center;
+        z-index: 11;
+        align-items: center;}
+
+h1 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background: linear-gradient(to top, #184c99, #b7d5fe);
+    -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+    color: #184c99;
+    margin: 0;
+    position: absolute;
+    top: 3px;
+    left: 20px;}
+
+    #LoginBox {
+        position: absolute; 
+        top: 10px;
+        right: 200px;
+        width: 120px; 
+        height: 40px; 
+        background-color: #b7d5fe;
+        border: 1px solid #184c99;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #184c99;
+        cursor: pointer;
+        z-index: 11;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+.Login{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 18px;}
+
+    #RegisterBox{position: absolute; 
+        top: 10px;
+        right: 40px;
+        width: 120px; 
+        height: 40px; 
+        background-color: #b7d5fe;
+        border: 1px solid #184c99;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #184c99;
+        cursor: pointer;
+        z-index: 11;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; }
+        
+        .Register {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+            font-size: 18px;}
+
+    #Info{position: absolute;
+    width: 1639px;
+    top: 80px;
+    height: 700px;
+    padding: 10px 0;
+    z-index: 11;}
+
+
+    .arquitecto{position: absolute;
+        top: 100px;
+        left:  20px;
+        height: 600px;}
+
+        h2{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 70px;
+            color: white;
+            margin: 0;
+            position: relative;
+            top: 120px;
+            left: 120px;
+        }
+
+        h3{
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            font-size: 30px;
+            color: white;
+            margin: 0;
+            position: relative;
+            top: 150px;
+            left: 120px;
+        }
+
+#MenuInfoI {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    right: 400px;  
+}
+
+#MenuInfoI .dropdown {
+    display: none; 
+    position: absolute;
+    width: 100px;
+    top: 35px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #184c99;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 12;
+}
+
+#MenuInfoI .dropdown li {
+    padding: 10px;
+    text-align: left;
+}
+
+#MenuInfoI .dropdown li a {
+    text-decoration: none;
+    color: #184c99;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#MenuInfoI:hover .dropdown {
+    display: block; 
+}
+
+.informacion{font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+.contacto{font-size: 15px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+.Novedades{font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;}
+
+#MenuInfoC {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    right: 360px
+}
+
+#MenuInfoC .dropdown {
+    display: none; 
+    position: absolute;
+    top: 35px;
+    width: 100px;
+    left: 0px;
+    background-color: white;
+    border: 1px solid #184c99;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 12;
+}
+
+#MenuInfoC .dropdown li {
+    padding: 10px;
+    text-align: left;
+}
+
+#MenuInfoC .dropdown li a {
+    text-decoration: none;
+    color: #184c99;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#MenuInfoC:hover .dropdown {
+    display: block; 
+}
+
+
+#MenuInfoN {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    right: 320px;  
+}
+
+#MenuInfoN .dropdown {
+    display: none; 
+    position: absolute;
+    top: 35px;
+    width: 100px;
+    left: 0;
+    background-color: white;
+    border: 1px solid #184c99;
+    border-radius: 5px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    z-index: 12;
+}
+
+#MenuInfoN .dropdown li {
+    padding: 10px;
+    text-align: left;
+}
+
+#MenuInfoN .dropdown li a {
+    text-decoration: none;
+    color: #184c99;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+}
+
+#MenuInfoN:hover .dropdown {
+    display: block; 
+}
+
+
+
+.s4u {
+    position: absolute;
+    right:  20px;
+    height: 90px;
+}
+
+
+
+#menu-toggle {
+  position: absolute;
+  top: 20px;
+  left: 10px;
+  background-color: #184c99;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#open-menu {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #184c99;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#side-menu.active + #open-menu {
+  display: none;
+}
+
+#side-menu {
+font-size: 12px;
+  background-color: #184c99;
+    color: black;
+position: fixed;
+  top: 0;
+  right: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  color: white;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#side-menu ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #b7d5fe;
+}
+
+#side-menu ul li:hover {
+  background-color: #b7d5fe;
+  cursor: pointer;
+}
+
+#side-menu.active {
+  right: 0;
+}
+
+#text-menu{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+a {
+  color: black; 
+  text-decoration: none; 
+}
+
+a:visited {
+  color: black; 
+}
+
+a:active {
+  color: black; 
+}
+
+ #LogOutBox{
+        position: absolute; 
+        top: 800px;
+        right: 55px;
+        width: 120px; 
+        height: 40px; 
+        background-color: #b7d5fe;
+        border: 1px solid #184c99;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #184c99;
+        cursor: pointer;
+        z-index: 11;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+.LogOut{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 18px;}
