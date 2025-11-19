@@ -1,0 +1,155 @@
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    background: #2357a5;
+    color: #184c99;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Contenedor principal */
+#admin-box {
+    background: #b7d5fe;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    width: 70vw;
+    max-width: 900px;
+    min-height: 400px;
+    padding: 40px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Secciones internas */
+.section {
+    margin: 20px 0;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+/* Títulos */
+h2, h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #2357a5;
+    margin: 0 0 30px 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 1.6rem;
+}
+
+/* Inputs y Textareas */
+input[type="text"], input[type="password"], input[type="email"], textarea, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #2357a5;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #eaf2fb;
+    color: #184c99;
+    font-family: inherit;
+}
+
+button {
+    background: #2357a5;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Arial Black', Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button:hover {
+    background: #184c99;
+}
+
+/* Enlaces */
+a {
+    color: #184c99;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 18px;
+    background: #eaf2fb;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+table th, table td {
+    padding: 10px;
+    border: 1px solid #b7d5fe;
+    text-align: left;
+    color: #184c99;
+    font-size: 1rem;
+}
+
+table th {
+    background: #2357a5;
+    color: #fff;
+    font-size: 1.1rem;
+}
+
+table tr:nth-child(even) {
+    background: #d3e3fa;
+}
+
+/* Evitar que textos largos "rompan" el diseño */
+#admin-box, #admin-box * {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+/* Asegurar que imágenes y multimedia escalen dentro de la caja */
+#admin-box img, #admin-box video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Centrar botones en cualquier contexto */
+form button,
+#admin-box button,
+.section button {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+@media (max-width: 700px) {
+    #admin-box {
+        width: 98vw;
+        padding: 10px 2vw;
+    }
+    form, .alert, .section {
+        max-width: 98vw;
+    }
+}
+

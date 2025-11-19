@@ -1,0 +1,329 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* General */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial Black', Arial, sans-serif;
+    background: #2357a5;
+    color: #184c99;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contenedor principal */
+#login {
+    background: #b7d5fe;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    width: 400px;
+    min-height: 350px;
+    padding: 40px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Espacio para la barra */
+}
+
+/* Títulos */
+h2, h3 {
+    font-family: 'Arial Black', Arial, sans-serif;
+    color: #2357a5;
+    margin: 0 0 30px 0;
+    font-size: 2rem;
+    text-align: center;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #2357a5;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #eaf2fb;
+    color: #184c99;
+    font-family: inherit;
+}
+
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #2357a5;
+    border-radius: 5px;
+    font-size: 1rem;
+    background: #eaf2fb;
+    color: #184c99;
+    font-family: inherit;
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+}
+
+/* Oculta flechas en Chrome, Safari, Edge */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+/* Oculta flechas en Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #184c99;
+    outline: none;
+    box-shadow: 0 0 5px rgba(24, 76, 153, 0.5);
+}
+
+/* Botones */
+button {
+    background: #2357a5;
+    color: #fff;
+    border: none;
+    padding: 12px 30px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-family: 'Arial Black', Arial, sans-serif;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.2s;
+}
+
+button:hover {
+    background: #184c99;
+}
+
+/* Enlaces */
+a {
+    color: #184c99;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Tablas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th,
+table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+table th {
+    background: #184c99;
+    color: #fff;
+}
+
+table tr:nth-child(even) {
+    background: #f9f9f9;
+}
+
+/* Evitar que textos largos "rompan" el diseño */
+#login, #login * {
+    overflow-wrap: break-word;
+    word-break: break-word;
+    white-space: normal;
+}
+
+/* Asegurar que imágenes y multimedia escalen dentro de la caja */
+#login img, #login video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Centrar todos los botones, incluso los que están dentro de <p> */
+p > button,
+p > a > button {
+    display: block;
+    margin: 20px auto 0 auto;
+}
+
+/* Centra el contenido principal debajo de la barra */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Centra la box de perfil */
+#login {
+    background: #b7d5fe;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+    width: 400px;
+    min-height: 350px;
+    padding: 40px 30px 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px; /* Espacio para la barra */
+}
+
+/* Centra la tabla dentro de la box */
+#login table {
+    margin: 0 auto;
+    width: 100%;
+    text-align: center;
+}
+
+#Barra {position:  absolute;
+            top: 0px;
+            width: 100%;
+            height: 50px;
+            padding: 10px 0;
+            background-color: rgba(255, 255, 255, 1);
+            text-align: center;
+            z-index: 11;
+            align-items: center;}
+
+
+h1 {font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+    background: linear-gradient(to top, #184c99, #b7d5fe);
+    -webkit-background-clip: text; 
+  -webkit-text-fill-color: transparent; 
+    color: #184c99;
+    margin: 0;
+    position: absolute;
+    top: 3px;
+    left: 20px;}
+
+   #menu-toggle {
+  position: absolute;
+  top: 5px;
+  left: 10px;
+  background-color: #184c99;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+#open-menu {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  background-color: #184c99;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+#side-menu.active + #open-menu {
+  display: none;
+}
+
+#side-menu {
+font-size: 12px;
+  background-color: #184c99;
+    color: black;
+position: fixed;
+  top: 0;
+  right: -250px; 
+  width: 250px;
+  height: 100%;
+  background-color: white;
+  color: white;
+  padding-top: 60px;
+  transition: right 0.3s ease;
+  z-index: 1000;
+}
+
+#side-menu ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#side-menu ul li {
+  padding: 15px 20px;
+  border-bottom: 1px solid #b7d5fe;
+}
+
+#side-menu ul li:hover {
+  background-color: #b7d5fe;
+  cursor: pointer;
+}
+
+#side-menu.active {
+  right: 0;
+}
+
+#text-menu{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  color: black;
+  font-size: 14px;
+}
+
+a {
+  color: black; 
+  text-decoration: none; 
+}
+
+a:visited {
+  color: black; 
+}
+
+a:active {
+  color: black; 
+}
+
+ #LogOutBox{
+        position: absolute; 
+        top: 800px;
+        right: 55px;
+        width: 120px; 
+        height: 40px; 
+        background-color: #b7d5fe;
+        border: 1px solid #184c99;
+        border-radius: 5px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        color: #184c99;
+        cursor: pointer;
+        z-index: 11;
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+    }
+
+.LogOut{font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; 
+    font-size: 18px;}
